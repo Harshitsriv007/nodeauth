@@ -10,7 +10,9 @@ const express = require("express");
 const User = require("./model/user");
 
 const app = express();
-process.env.TOKEN_KEY = "harshitsecratekey";
+const { TOKEN_KEY } = process.env;
+
+// process.env.TOKEN_KEY = "harshitsecratekey";
 app.use(express.json());
 
 // Logic goes here
